@@ -19,3 +19,30 @@ gsap.from("li", {
     // repeat: -1,
     // yoyo: true
 })
+
+let tl = gsap.timeline({
+    repeat: -1,
+    yoyo: true
+})
+
+tl.to(".box1", {
+    x:1100,
+    duration:3,
+    backgroundColor: "green",
+    rotate: 180,
+    scale: 0.5
+})
+tl.to(".box2", {
+    x:1100,
+    duration:3,
+    backgroundColor: "green",
+    rotate: 180,
+    scale: 0.5
+})
+tl.to(".box3", {
+    x:1100,
+    duration:3,
+    backgroundColor: "green",
+    rotate: -180,
+    scale: 0.5
+})

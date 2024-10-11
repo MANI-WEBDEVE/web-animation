@@ -27,3 +27,26 @@ html {
   gap: 10px;
   font-size:  30px;
 }
+
+
+.box1 {
+  background-color: red;
+  height:200px;
+  margin-bottom: 20px;
+  width: 200px;
+
+}
+.box2 {
+  background-color: green;
+  height: 200px;
+  margin-bottom: 20px;
+  width: 200px;
+
+}
+.box3 {
+  background-color: blue;
+  height: 200px;
+  margin-bottom: 20px;
+  width: 200px;
+
+}
