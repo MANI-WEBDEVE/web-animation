@@ -1,48 +1,22 @@
-// gsap.to(".box", {
-//   x: 1100,
-//   duration: 2,
-//   delay: 1,
-//   backgroundColor: "red",
-//   borderRadius: "50%",
-//   rotate: 180,
-//   scale: 0.5,
-//   repeat: -1,
-//   yoyo: true,
-// });
-
-// gsap.from("li", {
-//     y:20,
-//     duration: 1,
-//     stagger: 0.2,
-//     opacity: 0,
-//     delay: 1,
-//     // repeat: -1,
-//     // yoyo: true
-// })
-
-// let tl = gsap.timeline({
-//     repeat: -1,
-//     yoyo: true
-// })
-
-// tl.to(".box1", {
-//     x:1100,
-//     duration:3,
-//     backgroundColor: "green",
-//     rotate: 180,
-//     scale: 0.5
-// })
-// tl.to(".box2", {
-//     x:1100,
-//     duration:3,
-//     backgroundColor: "green",
-//     rotate: 180,
-//     scale: 0.5
-// })
-// tl.to(".box3", {
-//     x:1100,
-//     duration:3,
-//     backgroundColor: "green",
-//     rotate: -180,
-//     scale: 0.5
-// })
+gsap.to("#page1 .box", {
+  rotate: 180,
+  delay: 1,
+  duration: 3,
+  width: "100%",
+  height: "100%",
+});
+gsap.from("#page2 .box", {
+  width: "100%",
+  height: "100%",  
+  duration: 3,
+  delay: 1,
+  rotate: 180,
+  scrollTrigger: {
+    trigger: "#page2 .box",
+    scroller: "body",
+    start: "top 20%" ,
+    end:"bottom 50%",
+    scrub: 5,
+    markers: true,
+  },
+});
